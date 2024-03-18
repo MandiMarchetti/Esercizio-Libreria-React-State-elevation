@@ -11,9 +11,12 @@ const SingleBook = function (props) {
         </Card.Title>
         <Card.Text>{props.bookDetails.category}</Card.Text>
         <Card.Text>{props.bookDetails.price}</Card.Text>
-        <Button variant="success"
-        onClick={() => }
-        >Details</Button>
+        <Button
+          variant="success"
+          // onClick={() => }
+        >
+          Details
+        </Button>
       </Card.Body>
     </Card>
   );
