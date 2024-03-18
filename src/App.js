@@ -5,7 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import LibreriaNavbar from "./Components/LibreriaNavBar";
 import LibreriaFooter from "./Components/LibreriaFooter";
 import BookList from "./Components/BookList";
-// import CommentArea from "./Components/CommentArea";
+import BooksFantasy from "./Data/fantasy.json";
+import CommentArea from "./Components/CommentArea";
 
 class App extends Component {
   render() {
@@ -15,12 +16,12 @@ class App extends Component {
           <LibreriaNavbar />
           <Container>
             <Row>
-              <Col>
-                <BookList />
+              <Col className="col-md-6">
+                <BookList listOfBooks={BooksFantasy} />
               </Col>
-              {/* <Col>
+              <Col>
                 <CommentArea />
-              </Col> */}
+              </Col>
             </Row>
           </Container>
         </header>
